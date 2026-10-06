@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+.deps/
+.env
+submission.zip
+FlightAgent_submission.zip
+cli-test-*/
+benchmark-test-*/
+results_local/
+BAO_CAO.md

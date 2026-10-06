@@ -1,0 +1,7 @@
+{
+  "task_id": "missing_approval-0",
+  "principal": "student",
+  "flight_id": "VN101",
+  "passengers": 1,
+  "max_total_price": 2000000
+}

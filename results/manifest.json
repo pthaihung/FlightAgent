@@ -1,0 +1,24 @@
+{
+  "python": "3.13.9",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "langchain": "1.4.3",
+    "langchain-core": "1.6.6",
+    "langgraph": "1.2.13"
+  },
+  "runtimes": [
+    "langgraph"
+  ],
+  "decision_modes": [
+    "mock"
+  ],
+  "total_runs": 180,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "timing": "wall clock perf_counter; mock tools have no network delay"
+}

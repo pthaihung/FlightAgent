@@ -1,0 +1,177 @@
+[
+  {
+    "case": "sold_out",
+    "seed": 0,
+    "architecture": "plan_execute",
+    "expected": "completed",
+    "model": "openrouter:qwen/qwen3.7-flash",
+    "max_seconds": 180,
+    "status": "failed",
+    "completed": false,
+    "correct": false,
+    "completion_eligible": true,
+    "unauthorized_effects": 0,
+    "runtime": "langgraph",
+    "decision_mode": "llm",
+    "tool_calls": 0,
+    "tool_errors": 0,
+    "permission_denials": 0,
+    "decisions": 0,
+    "plans": 1,
+    "replans": 0,
+    "retries": 0,
+    "steps": 1,
+    "elapsed_ms": 621.6802999988431,
+    "result": {
+      "task_id": "sold_out-0",
+      "status": "failed",
+      "completed": false,
+      "selected": null,
+      "booking_id": null,
+      "checks": {},
+      "evidence": {},
+      "reason": "TooManyRequestsResponseError: Provider returned error",
+      "handoff": {
+        "schema_version": 1,
+        "reason": "failed",
+        "task": {
+          "task_id": "sold_out-0",
+          "constraints": {
+            "origin": "SGN",
+            "destination": "HAN",
+            "departure_date": "2026-11-20",
+            "passengers": 1,
+            "max_total_price": 2000000,
+            "max_stops": 1,
+            "min_baggage_kg": 0,
+            "allowed_airlines": []
+          },
+          "objective": "recommend"
+        },
+        "principal": "student",
+        "allowed_tools": [
+          "book_flight",
+          "get_booking",
+          "quote_flight",
+          "search_flights"
+        ],
+        "selected": null,
+        "plan": [],
+        "completed_steps": [],
+        "trace": [
+          {
+            "index": 0,
+            "kind": "start",
+            "architecture": "plan_execute",
+            "runtime": "langgraph",
+            "decision_mode": "llm"
+          },
+          {
+            "index": 1,
+            "kind": "verification",
+            "status": "failed",
+            "checks": {},
+            "evidence": {}
+          }
+        ],
+        "metrics": {
+          "tool_calls": 0,
+          "tool_errors": 0,
+          "permission_denials": 0,
+          "decisions": 0,
+          "plans": 1,
+          "replans": 0,
+          "retries": 0,
+          "steps": 1
+        },
+        "pending_action": "review_error_and_resume_with_new_budget",
+        "backend_snapshot": {
+          "event": "sold_out",
+          "seed": 0,
+          "event_fired": false,
+          "flights": {
+            "VN101": {
+              "flight_id": "VN101",
+              "airline": "Vietnam Airlines",
+              "origin": "SGN",
+              "destination": "HAN",
+              "departure_date": "2026-11-20",
+              "price": 900000,
+              "stops": 1,
+              "baggage_kg": 7,
+              "seats": 6,
+              "version": 1
+            },
+            "VN202": {
+              "flight_id": "VN202",
+              "airline": "Vietnam Airlines",
+              "origin": "SGN",
+              "destination": "HAN",
+              "departure_date": "2026-11-20",
+              "price": 1200000,
+              "stops": 0,
+              "baggage_kg": 20,
+              "seats": 6,
+              "version": 1
+            },
+            "QH303": {
+              "flight_id": "QH303",
+              "airline": "Bamboo Airways",
+              "origin": "SGN",
+              "destination": "HAN",
+              "departure_date": "2026-11-20",
+              "price": 1500000,
+              "stops": 0,
+              "baggage_kg": 25,
+              "seats": 6,
+              "version": 1
+            }
+          },
+          "quotes": {},
+          "bookings": {},
+          "idempotency": {}
+        }
+      },
+      "trace": [
+        {
+          "index": 0,
+          "kind": "start",
+          "architecture": "plan_execute",
+          "runtime": "langgraph",
+          "decision_mode": "llm"
+        },
+        {
+          "index": 1,
+          "kind": "verification",
+          "status": "failed",
+          "checks": {},
+          "evidence": {}
+        }
+      ],
+      "metrics": {
+        "tool_calls": 0,
+        "tool_errors": 0,
+        "permission_denials": 0,
+        "decisions": 0,
+        "plans": 1,
+        "replans": 0,
+        "retries": 0,
+        "steps": 1,
+        "elapsed_ms": 621.6802999988431
+      },
+      "architecture": "plan_execute",
+      "runtime": "langgraph",
+      "decision_mode": "llm",
+      "llm_usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "model_calls": 0,
+        "usage_available": true
+      },
+      "model": "openrouter:qwen/qwen3.7-flash",
+      "reasoning_requested": {
+        "effort": "none"
+      }
+    }
+  }
+]

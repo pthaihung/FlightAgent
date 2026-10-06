@@ -1,0 +1,37 @@
+{
+  "python": "3.13.9",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "langchain": "1.4.3",
+    "langchain-core": "1.6.6",
+    "langgraph": "1.2.13",
+    "langchain-openrouter": "0.2.9"
+  },
+  "runtimes": [
+    "langgraph"
+  ],
+  "decision_modes": [
+    "llm"
+  ],
+  "models": [
+    "openrouter:qwen/qwen3.7-flash"
+  ],
+  "time_budgets_seconds": [
+    180
+  ],
+  "total_runs": 36,
+  "seeds": [
+    0
+  ],
+  "timing": "wall clock perf_counter; mock tools have no network delay",
+  "expected_runs": 36,
+  "evaluated_runs": 36,
+  "pending_runs": 0,
+  "api_error_attempts": 1,
+  "benchmark_complete": true,
+  "stopped_reason": null,
+  "requested_model": "openrouter:qwen/qwen3.7-flash",
+  "reasoning_requested": {
+    "effort": "none"
+  }
+}
